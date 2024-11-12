@@ -1,0 +1,261 @@
+
+#menu__toggle {
+  opacity: 0;
+  position: fixed;
+  top: 36px;
+  left: 245px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 33px;
+  left: 243px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #797979;
+  transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #000000;
+  box-shadow: 1px 0 6px rgb(253, 252, 252);
+  transition-duration: .25s;
+  z-index: 1;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #fbfbfb;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+  text-align: center;
+}
+.menu__item:hover {
+  background-color: #808080;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  border-style: solid;
+  border-color: #494949;
+  background-color: #e6e6e6;
+}
+  
+
+html {
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.nowpage{
+  text-align: center;
+  font-size: 250%;
+}
+
+.logo{
+  font-family: 'Cabin', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.page{
+  margin-top: 5px;
+  margin-left: 75px;
+  margin-right: 75px;
+  color: #ffffff;
+}
+
+#present{
+  font-family:  'Roboto', sans-serif;
+  line-height: 150%;
+  text-align: justify;
+  font-size: 105%;
+  color:#ffffff;
+
+}
+
+#presentCenter {
+  padding-top: 5px;
+  font-family:  'Roboto', sans-serif;
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  color:#ffffff;
+}
+
+
+.back_to_top{
+  display: block;
+  margin: auto;
+  padding-top: 30px;
+}
+
+
+
+
+footer{
+  background-color: rgb(185, 67, 67);
+  display : table-row;
+}
+
+.baspage{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+
+.credits{
+  font-family: 'Rubik', sans-serif;
+  font-size: 120%;
+}
+
+h2{
+  color: #ffffff;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.all1{
+  display: flex;
+}
+
+.all2{
+  display: flex;
+}
+
+.video1 {
+  text-align: left;
+  display: flex;
+  margin-left: 125px;
+  width: 600px;
+  height: 560px;
+}
+
+.video1 iframe {
+  border: 0;
+}
+
+.video1 iframe[allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"] {
+  width: 100%;
+  height: 100%;
+}
+
+
+.video2 {
+  text-align: left;
+  display: flex;
+  margin-left: 125px;
+  width: 600px;
+  height: 560px;
+}
+
+.video2 iframe {
+  border: 0;
+}
+
+.video2 iframe[allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"] {
+  width: 100%;
+  height: 100%;
+}
+
+#texteblanc1{
+  display: flex;
+  color: #ffffff;
+  font-family:  'Roboto', sans-serif;
+  text-align: justify;
+  text-align: center;
+  margin-left: 300px;
+
+}
+
+
+#texteblanc2{
+  display: flex;
+  color: #ffffff;
+  font-family:  'Roboto', sans-serif;
+  text-align: justify;
+  text-align: center;
+  margin-left: 300px
+
+}
+
+
+.t1{
+  margin-right: 100px;
+  margin-top: 150px;
+}
+
+.t2{
+  margin-right: 100px;
+  margin-top: 150px;
+}
